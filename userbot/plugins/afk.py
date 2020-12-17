@@ -24,14 +24,14 @@ async def set_not_afk(event):
         try:
             await borg.send_message(  # pylint:disable=E0602
                 Config.PLUGIN_CHANNEL,  # pylint:disable=E0602
-                "Mine Owner has gone for some Important work he is very busy😅"
+                "මම දැන් ඕෆ්ලයින්.ආපු ගමන් රිප්ලයි එකක් දාන්නම්.😅"
             )
         except Exception as e:  # pylint:disable=C0103,W0703
             await borg.send_message(  # pylint:disable=E0602
                 event.chat_id,
                 "Please set `PLUGIN_CHANNEL` " + \
                 "for the proper functioning of afk functionality " + \
-                "in @Sensible_userbot \n\n `{}`".format(str(e)),
+                "in Userbot \n\n `{}`".format(str(e)),
                 reply_to=event.message.id,
                 silent=True
             )
@@ -61,9 +61,9 @@ async def _(event):
             afk_time = datetime.datetime.now()  # pylint:disable=E0602
         USER_AFK = f"yes: {reason}"  # pylint:disable=E0602
         if reason:
-            await event.edit(f"My Boss Is Going , The Reason is {reason}")
+            await event.edit(f"මම ඕෆ්ලයින්. , හේතුව {reason}")
         else:
-            await event.edit(f"My Boss is Going")
+            await event.edit(f"මම ඕෆ්ලයින්.")
         await asyncio.sleep(5)
         await event.delete()
         try:
@@ -85,7 +85,7 @@ async def on_afk(event):
     global USER_AFK  # pylint:disable=E0602
     global afk_time  # pylint:disable=E0602
     global last_afk_message  # pylint:disable=E0602
-    afk_since = "**a while ago**"
+    afk_since = "**චුට්ටකට ඉස්සෙල්ල.**"
     current_message_text = event.message.message.lower()
     if "afk" in current_message_text:
         # userbot's should not reply to other userbot's
@@ -115,16 +115,16 @@ async def on_afk(event):
                     wday = now + datetime.timedelta(days=-days)
                     afk_since = wday.strftime('%A')
             elif hours > 1:
-                afk_since = f"`{int(hours)}h{int(minutes)}m` **ago**"
+                afk_since = f"`{int(hours)}h{int(minutes)}m` **කට ඉස්සෙල්ල.**"
             elif minutes > 0:
-                afk_since = f"`{int(minutes)}m{int(seconds)}s` **ago**"
+                afk_since = f"`{int(minutes)}m{int(seconds)}s` **කට ඉස්සෙල්ල.**"
             else:
-                afk_since = f"`{int(seconds)}s` **ago**"
+                afk_since = f"`{int(seconds)}s` **කට ඉස්සෙල්ල.**"
         msg = None
-        message_to_reply = f"My Master Has Been Gone For {afk_since}\nWhere He Is: **It's A Secret 🤫** " + \
-            f"\n\n__ I'll back in a few Light years__\n**REASON**: {reason}" \
+        message_to_reply = f"මම ඕෆ්ලයින් ගියා {afk_since}\nමේ වෙලාවෙ කරන දේ: **ඒක රහසක්.🤫** " + \
+            f"\n\n__ මම එන්නම් අපහු ඉක්මනටම__\n**හේතුව**: {reason}" \
             if reason \
-            else f"**Important Notice**\n\n[This User Is Ded Forever...](https://telegra.ph//file/a53fa950ff31781d5930a.jpg) "
+            else f"**වැදගත් පණිවුඩයකි.**\n\n[මෙම පරීශීලකයා මිය ගොස් ඇත.](https://telegra.ph//file/a53fa950ff31781d5930a.jpg) "
         msg = await event.reply(message_to_reply)
         await asyncio.sleep(5)
         if event.chat_id in last_afk_message:  # pylint:disable=E0602
