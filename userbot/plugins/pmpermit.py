@@ -21,9 +21,9 @@ PREV_REPLY_MESSAGE = {}
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
 CUSTOM_MIDDLE_PMP = str(CUSTOM_PMPERMIT) if CUSTOM_PMPERMIT else "**YOU HAVE TRESPASSED TO MY MASTERS INBOX** \n`THIS IS ILLEGAL AND REGARDED AS A CRIME`"
 USER_BOT_WARN_ZERO = "`  You Have Been Blocked Due To Spamming Of My Masters Inbox.` "
-USER_BOT_NO_WARN = ("`Hello Ser ! This is` **Sensible Userbot**\n"
+USER_BOT_NO_WARN = ("`Hello! This is` **Navod's Private Userbot**\n"
                     "`Private Messaging Security Protocol ⚠️`\n\n"
-                    "**Welcome Sir This Is My Master\n"
+                    "**Welcome! This Is My Master\n"
                     f"{DEFAULTUSER}'s Inbox**\n\n"
                     f"{CUSTOM_MIDDLE_PMP} 🔥\n\n"
                     "**Welcome To His Inbox PLease** 🔥 `/start` 🔥 To Continue ****")
@@ -46,7 +46,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                     await PREV_REPLY_MESSAGE[chat.id].delete()
                     del PREV_REPLY_MESSAGE[chat.id]
                 pmpermit_sql.approve(chat.id, reason)
-                await event.edit("Approved to pm [{}](tg://user?id={})".format(firstname, chat.id))
+                await event.edit("Private message කරන්න පුලුවන් ඔයාට දැන්. [{}](tg://user?id={})".format(firstname, chat.id))
                 await asyncio.sleep(3)
                 await event.delete()
 
