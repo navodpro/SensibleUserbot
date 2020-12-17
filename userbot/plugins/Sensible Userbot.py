@@ -12,7 +12,7 @@ naam = str(ALIVE_NAME)
 
 bot = "@Sensible_userbot"
 
-@borg.on(admin_cmd("Sensible Userbot By @ceowhitehatcrakcs ?(.*)"))
+@borg.on(admin_cmd("Personal Userbot By @Mr_dutugemunu ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -25,7 +25,7 @@ async def _(event):
               response = await conv.get_response()
               await conv.send_message("/hello")
               audio = await conv.get_response()
-              await borg.send_file(event.chat_id, audio, caption="🔰Boss Listen To This Audio" + naam +"\n`Check out` [Sensible Userbot By @ceowhitehatcrakcs](https://github.com/spandey112/SensibleUserbot)")
+              await borg.send_file(event.chat_id, audio, caption="🔰Boss Listen To This Audio" + naam +"\n`Check out` [Personal Userbot By @Mr_dutugemunu](https://github.com/navodpro/SensibleUserbot)")
               await event.delete()
           except YouBlockedUserError:
               await event.edit("**Error:** `unblock` @Sensible_userbot `and retry!")
@@ -36,7 +36,7 @@ async def _(event):
               response = await conv.get_response()
               await conv.send_message("/helpme")
               audio = await conv.get_response()
-              await borg.send_file(event.chat_id, audio, caption="**Check Out Sir**\n`Check out` [Sensible Userbot By @ceowhitehatcrakcs](https://github.com/spandey112/SensibleUserbot)")
+              await borg.send_file(event.chat_id, audio, caption="**Check Out Sir**\n`Check out` [Personal Userbot By @Mr_dutugemunu](https://github.com/navodpro/SensibleUserbot)")
               await event.delete()
           except YouBlockedUserError:
               await event.edit("**Error:** `unblock` @Sensible_userbot `and retry!`")
@@ -47,7 +47,7 @@ async def _(event):
               response = await conv.get_response()
               await conv.send_message("/movies")
               audio = await conv.get_response()
-              await borg.send_file(event.chat_id, audio, caption="**Here is Movie**\n`Check out` [Sensible Userbot By @ceowhitehatcrakcs](https://github.com/spandey112/SensibleUserbot)")
+              await borg.send_file(event.chat_id, audio, caption="**Here is Movie**\n`Check out` [Personal Userbot By @Mr_dutugemunu](https://github.com/navodpro/SensibleUserbot)")
               await event.delete()
           except YouBlockedUserError:
               await event.edit("**Error:** `unblock` @Sensible_userbot `and retry!`")
@@ -58,7 +58,7 @@ async def _(event):
               response = await conv.get_response()
               await conv.send_message("/music")
               audio = await conv.get_response()
-              await borg.send_file(event.chat_id, audio, caption="**Hoi ! Here iz music**\n`Check out` [Sensible Userbot By @ceowhitehatcrakcs](https://github.com/spandey112/SensibleUserbot)")
+              await borg.send_file(event.chat_id, audio, caption="**Hoi ! Here iz music**\n`Check out` [Personal Userbot By @Mr_dutugemunu](https://github.com/navodpro/SensibleUserbot)")
               await event.delete()
           except YouBlockedUserError:
               await event.edit("**Error:** `unblock` @Sensible_userbot `and retry!`")
@@ -69,7 +69,7 @@ async def _(event):
               response = await conv.get_response()
               await conv.send_message("/meme")
               audio = await conv.get_response()
-              await borg.send_file(event.chat_id, audio, caption="**Lol**\n`Check out` [Sensible Userbot By @ceowhitehatcrakcs](https://github.com/spandey112/SensibleUserbot)")
+              await borg.send_file(event.chat_id, audio, caption="**Lol**\n`Check out` [Personal Userbot By @Mr_dutugemunu](https://github.com/navodpro/SensibleUserbot)")
               await event.delete()
           except YouBlockedUserError:
               await event.edit("**Error:** `unblock` @Sensible_userbot `and retry!`")
