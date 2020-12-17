@@ -1,7 +1,6 @@
 # Sensible Userbot
 
 <p align="center">
-<img src="SENSIBLE.jpg" alt="Sensible USERBOT">
 
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
@@ -26,7 +25,7 @@ I Like To Thank Them Always Mr White && Infotel (Infotell Is Latest) Who Made vi
 ## Installing Heroku 
 
 ### The Easy Way
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/spandey112/SensibleUserbot/)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/navodpro/SensibleUserbot/)
 
 Take Sting session from Replit
 [![Run on Repl.it](https://repl.it/badge/github/spandey112/SensibleUserbot)](https://stringsession.sensibleuserbot.repl.run/)
@@ -46,7 +45,7 @@ So I have Updated This Things For Api Id Just GO To This Bot Click There t.me/ce
 
 3. Now Copy String Session
 
-4 Open this link https://github.com/spandey112/SensibleUserbot
+4 Open this link https://github.com/navodpro/SensibleUserbot
 
 5. Click On Deploy app
 
